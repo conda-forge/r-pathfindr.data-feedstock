@@ -1,4 +1,4 @@
-{% set version = '2.0.0' %}
+{% set version = "2.1.0" %}
 
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
@@ -11,11 +11,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/pathfindR.data_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/pathfindR.data/pathfindR.data_{{ version }}.tar.gz
-  sha256: eb76a8c611010b6cae6003cda4eba9f2ec249e7c6113bf67039a9a46944df89d
+  sha256: 024df34e701133a795d1b8c03c6a738460c2f868a2b8494ab17bd932fc408cde
 
 build:
-  merge_build_host: True  # [win]
-  number: 1
+  merge_build_host: true  # [win]
+  number: 0
 
   noarch: generic
 
@@ -42,10 +42,7 @@ test:
 about:
   home: https://github.com/egeulgen/pathfindR.data
   license: MIT
-  summary: This is a data-only package, containing data needed to run the CRAN package 'pathfindR',
-    a package for enrichment analysis utilizing active subnetworks. This package contains
-    protein-protein interaction network data, data related to gene sets and example
-    input/output data.
+  summary: This is a data-only package, containing data needed to run the CRAN package 'pathfindR', a package for enrichment analysis utilizing active subnetworks. This package contains protein-protein interaction network data, data related to gene sets and example input/output data.
   license_family: MIT
   license_file:
     - '{{ environ["PREFIX"] }}/lib/R/share/licenses/MIT'
