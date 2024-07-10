@@ -1,7 +1,6 @@
 {% set version = "2.1.0" %}
 
 {% set posix = 'm2-' if win else '' %}
-{% set native = 'm2w64-' if win else '' %}
 
 package:
   name: r-pathfindr.data
@@ -14,8 +13,7 @@ source:
   sha256: 024df34e701133a795d1b8c03c6a738460c2f868a2b8494ab17bd932fc408cde
 
 build:
-  merge_build_host: true  # [win]
-  number: 0
+  number: 1
 
   noarch: generic
 
