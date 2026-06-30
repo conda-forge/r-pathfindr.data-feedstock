@@ -1,4 +1,4 @@
-{% set version = "2.1.0" %}
+{% set version = "2.2.0" %}
 
 {% set posix = 'm2-' if win else '' %}
 
@@ -10,10 +10,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/pathfindR.data_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/pathfindR.data/pathfindR.data_{{ version }}.tar.gz
-  sha256: 024df34e701133a795d1b8c03c6a738460c2f868a2b8494ab17bd932fc408cde
+  sha256: 1f3ec855a7383d9b8623878cee5de1b7437acd8ab0e8c663ef16ab8433ae9f25
 
 build:
-  number: 2
+  number: 0
 
   noarch: generic
 
